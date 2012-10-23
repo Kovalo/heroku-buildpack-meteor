@@ -36,8 +36,7 @@ build() {
 install_houce() {
   (
     echo "Installing houce package"
-    cd $METEOR_HOME/usr/lib/meteor/lib
-    npm install sugar
+    mkdir -p $METEOR_HOME/usr/lib/meteor/packages
     cp -r $BUILD_DIR/.houce/js $METEOR_HOME/usr/lib/meteor/packages/houce
   )
 }
@@ -46,5 +45,5 @@ install_houce() {
 [ ! -d $CACHE_DIR ] && mkdir $CACHE_DIR
 
 fetch_meteor
-build
 install_houce
+build
