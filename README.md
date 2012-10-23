@@ -1,5 +1,8 @@
 # Heroku buildpack for meteor
 
+Installs meteor and [houCe](https://github.com/jussiry/houCe) package.
+For now contents of the package must be found from `$BUILD_DIR/.houce/js`
+
 ## Usage
 
 ```
