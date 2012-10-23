@@ -36,6 +36,10 @@ build() {
 install_houce() {
   (
     echo "Installing houce package"
+    cd $METEOR_HOME
+    ls -l
+    cd packages
+    ls -l
     cp -r $BUILD_DIR/.houce/js $METEOR_HOME/packages/houce
   )
 }
