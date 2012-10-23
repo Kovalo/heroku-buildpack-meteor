@@ -37,7 +37,7 @@ install_houce() {
   (
     echo "Installing houce package"
     cd $METEOR_HOME/usr/lib/meteor/lib
-    $METEOR_HOME/bin/npm install sugar
+    npm install sugar
     cp -r $BUILD_DIR/.houce/js $METEOR_HOME/usr/lib/meteor/packages/houce
   )
 }
