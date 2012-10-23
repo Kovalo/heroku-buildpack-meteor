@@ -43,3 +43,4 @@ install_houce() {
 
 fetch_meteor
 build
+install_houce
