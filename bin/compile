@@ -37,8 +37,11 @@ install_houce() {
   (
     echo "Installing houce package"
     cd $METEOR_HOME
+    pwd
     ls -l
-    cd packages
+    which meteor
+    cd $BUILD_DIR
+    cd .houce
     ls -l
     cp -r $BUILD_DIR/.houce/js $METEOR_HOME/packages/houce
   )
